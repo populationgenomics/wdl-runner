@@ -47,8 +47,9 @@ RUN chmod u+x /wdl_runner/wdl_runner.sh
 
 # Copy Cromwell and the Cromwell conf template
 RUN mkdir /cromwell
+ARG CROMWELL_VERSION=53
 RUN cd /cromwell && \
-    curl -L -O https://github.com/broadinstitute/cromwell/releases/download/53/cromwell-53.jar
+    curl -L -O https://github.com/broadinstitute/cromwell/releases/download/${CROMWELL_VERSION}/cromwell-${CROMWELL_VERSION}.jar
 RUN ln /cromwell/cromwell-53.jar /cromwell/cromwell.jar
 COPY jes_template.conf /cromwell/
 
