@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-BUCKET="cpg-peter-dev"
+BUCKET="<my-bucket>"
 REGION="australia-southeast1"
 
 gcloud beta lifesciences pipelines run \
