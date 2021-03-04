@@ -7,7 +7,7 @@ actions:
     22: 22 
 - containerName: WDL_Runner
   commands: [ '/wdl_runner/wdl_runner.sh' ]
-  imageUri: broadinstitute/wdl-runner:latest
+  imageUri: australia-southeast1-docker.pkg.dev/peter-dev-302805/pd-ar-repo/wdl_runner:1.0
 
 resources:
    virtualMachine:
